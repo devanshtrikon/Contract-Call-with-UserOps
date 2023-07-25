@@ -1,0 +1,10 @@
+{
+  "rpcUrl": "https://api.stackup.sh/v1/node/0655424e553e067be1c0ee1c4ac793bdd268da4820c8ee29766280c91b48faa4",
+  "signingKey": "0xb2502cb3148a00ef99c2534d3c17a5b4d233cbeb6dedc626fdcf2c109f877376",
+  "paymaster": {
+    "rpcUrl": "https://api.stackup.sh/v1/paymaster/0655424e553e067be1c0ee1c4ac793bdd268da4820c8ee29766280c91b48faa4",
+    "context": {
+      "type": "payg"
+    }
+  }
+}

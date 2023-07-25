@@ -1,5 +1,5 @@
-import creds from './creds.json' assert { type: 'json' };
-import { createRandomGameToken, registerPlayer, getPlayer, callKryptoarenaMethod } from './kryptoarena.js';
+import creds from './data/creds.json' assert { type: 'json' };
+import { createRandomGameToken, registerPlayer, getPlayer, callKryptoarenaMethod } from './kryptoarena/kryptoarena.js';
 import crypto from 'node:crypto';
 
 const token = '0x8d97f95A4EeD5D011Ec99b204561bb282E0d137A'; // Trikon Test token

@@ -1,5 +1,5 @@
 import { Kryptorena_ABI } from './abi-krytoarena.js';
-import { callContractMethod } from './call_contract_method.js';
+import { callContractMethod } from '../call_contract_method.js';
 
 const token = '0x2377CD39EfBADffc0040DaebE71e3F0d7183E3Bd';
 

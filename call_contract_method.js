@@ -1,7 +1,7 @@
 import { Contract, JsonRpcProvider, ethers } from 'ethers';
 import { Client, Presets } from 'userop';
-import config from './config.json' assert { type: 'json' };
-import creds from './creds.json' assert { type: 'json' };
+import config from './data/config.json' assert { type: 'json' };
+import creds from './data/creds.json' assert { type: 'json' };
 
 export const callContractMethod = async (token, abi, method, args, pKey, rpcUrl = config.rpcUrl) => {
   const provider = new JsonRpcProvider(rpcUrl);

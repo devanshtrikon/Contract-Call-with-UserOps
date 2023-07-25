@@ -1,7 +1,7 @@
 import { Contract, JsonRpcProvider, ethers, parseUnits } from 'ethers';
 import { Client, Presets } from 'userop';
-import config from './config.json' assert { type: 'json' };
-import { ERC20_ABI } from './abi.js';
+import config from '../config.json' assert { type: 'json' };
+import { ERC20_ABI } from '../data/abi.js';
 
 export const transferERC20 = async (token, from, to, value, spenderKey) => {
   const provider = new JsonRpcProvider(config.rpcUrl);

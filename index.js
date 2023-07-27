@@ -20,4 +20,4 @@ const to = '0xa11117731b07ACD1963DdDdcB541c365DD4DA085'; // EOA Destination
 // console.log('Decoded: ', ev.decode(ev.data));
 // console.log('Receipt: ', await ev.getTransactionReceipt());
 
-await callReadMethod();
+await callReadMethod('getAllPlayers', []);

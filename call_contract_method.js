@@ -1,7 +1,6 @@
-import { Contract, JsonRpcProvider, ethers } from 'ethers';
+import { Contract, JsonRpcProvider, Wallet } from 'ethers';
 import { Client, Presets } from 'userop';
 import config from './data/config.json' assert { type: 'json' };
-import creds from './data/creds.json' assert { type: 'json' };
 
 export const callContractMethod = async (token, abi, method, args, pKey, rpcUrl = config.rpcUrl) => {
   const provider = new JsonRpcProvider(rpcUrl);
@@ -9,7 +8,7 @@ export const callContractMethod = async (token, abi, method, args, pKey, rpcUrl 
 
   const paymasterMiddleware = Presets.Middleware.verifyingPaymaster(config.paymaster.rpcUrl, config.paymaster.context);
 
-  const account = await Presets.Builder.SimpleAccount.init(new ethers.Wallet(pKey), rpcUrl, {
+  const account = await Presets.Builder.SimpleAccount.init(new Wallet(pKey), rpcUrl, {
     paymasterMiddleware,
   });
 
